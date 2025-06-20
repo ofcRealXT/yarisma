@@ -1,1 +1,20 @@
-
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/error.css') }}">
+    <title>404: Sayfa Bulunamadı</title>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <div class="error-message">Sayfa Bulunamadı</div>
+        <div class="error-desc">
+            Ulaşmaya çalıştığınız sayfa yok veya silinmiş.<br>
+            Lütfen ana sayfaya dönün.
+        </div>
+        <a href="{{ url_for('home') }}">Ana Sayfa'ya Dön</a>
+    </div>
+</body>
+</html>
